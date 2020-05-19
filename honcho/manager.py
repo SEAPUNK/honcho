@@ -127,7 +127,7 @@ class Manager(object):
             if self._all_started() and self._all_stopped():
                 exit = True
 
-            if exit_start is None and self._all_started() and self._any_stopped():
+            if exit_start is None and self._all_started() and self._all_stopped():
                 exit_start = self._env.now()
                 self.terminate()
 
